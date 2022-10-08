@@ -6,6 +6,34 @@ Redirect upload (write operation) and download (read operation) as local program
 
 ## Usage
 
+<!-- markdownlint-disable -->
+
+```plain
+Usage of ftp-worker:
+  -hostname string
+    	FTP listen hostname
+  -port int
+    	FTP listen port
+  -on-read string
+    	Read operation local hook program
+  -on-write string
+    	Write operation local hook program
+  -workdir string
+    	Work directory
+  -username string
+    	Username (default "user")
+  -password string
+    	Password (default "pass")
+  -tls-explicit
+    	Explicit FTPS
+  -tls-cert-file string
+    	TLS Certificate file
+  -tls-key-file string
+    	TLS Key file
+```
+
+<!-- markdownlint-restore -->
+
 ### Read hook
 
 Equivalent to:

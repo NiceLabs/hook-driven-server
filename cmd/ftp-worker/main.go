@@ -19,7 +19,7 @@ var (
 
 func init() {
 	flag.StringVar(&hostname, "hostname", "", "FTP listen hostname")
-	flag.IntVar(&port, "port", 21, "FTP listen port")
+	flag.IntVar(&port, "port", 0, "FTP listen port")
 	flag.StringVar(&certFile, "tls-cert-file", "", "TLS Certificate file")
 	flag.StringVar(&keyFile, "tls-key-file", "", "TLS Key file")
 	flag.BoolVar(&explicitFTPS, "tls-explicit", false, "Explicit FTPS")
